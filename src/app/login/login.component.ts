@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
 
-  constructor(private afAuth: AngularFireAuth, private ) {}
+  constructor(private afAuth: AngularFireAuth) {}
 
   async login(email, pass) {
     const trace = perf.trace('userLogin');
